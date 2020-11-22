@@ -1,0 +1,27 @@
+// Create Database 
+
+//create database Ecom.
+
+//use Ecom.
+
+$admin_users="create table admin_users(id int auto_increment not null primary key,username varchar(255) not null,password varchar(255) not null);";
+
+$banner="create table banner(id int auto_increment not null primary key,image varchar(3000) not null,status tinyint not null);";
+
+$categories="create table categories(id int auto_increment not null primary key,categories varchar(250) not null,status tinyint not null);";
+
+$contact_us="create table contact_us(id int auto_increment not null primary key,name varchar(255) not null,email varchar(75) not null,mobile varchar(25) not null,comment text not null,added_on datetime not null);";
+
+$order_detail="create table order_detail(id int auto_increment not null primary key,order_id int not null,product_id int not null,price float not null,qty int not null);";
+
+$users="create table users(id int auto_increment not null primary key,username varchar(255) not null,password varchar(50) not null,mobile varchar(25) not null,email varchar(75) not null,added_on datetime not null);";
+
+$users_cart="create table users_cart(id int auto_increment not null primary key,use_id int not null,p_id int not null,qty int not null);";
+
+$wishlist="create table wishlist(id int auto_increment not null primary key,user_id int not null,product_id i@nt not null,added_on datetime not null);";
+
+$returns="create table returns(id int auto_increment not null primary key,od_id int not null,problems varchar(255) not null);";
+
+$orders="create table orders(id int auto_increment not null primary key,u_id int not null,name varchar(75) not null,address varchar(255) not null,road varchar(25) not null,pin int not null,mobile varchar(25) not null,city varchar(25) not null,state varchar(25) not null,total_price float not null,payment_type varchar(20) not null,payment_status varchar(20) not null,order_status varchar(20) not null,mihpayid varchar(30) not null,txnid varchar(25) not null,payu_status varchar(25) not null,added_on datetime not null);";
+
+$product="create table product(id int auto_increment not null primary key,categories_id int not null,name varchar(75) not null,mrp float not null,price float not null,qty int not null,image varchar(3000) not null,short_desc varchar(2000) not null,description text not null,meta_title varchar(2000) not null,meta_desc varchar(2000) not null,meta_keyword varchar(2000) not null,status tinyint not null,best_sell int not null);";
