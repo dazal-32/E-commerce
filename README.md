@@ -6,6 +6,8 @@ Before deploying this site in your computer please make sure your local server(w
 is on and you have created your databases according to the create_database.txt file.You have to change the connection files in 
 both the root and the Admin folder.
 
+I have used mpdf library for managing invoices.
+
 ** Please do not copy the whole site for any commercial use its not for that yet ,only use this for educational purpose and 
 nothing else. And do not remove the copyright section it should be there as it is.
    -- Ayondip Jana(dazal-32)
