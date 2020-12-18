@@ -18,7 +18,7 @@ $users="create table users(id int auto_increment not null primary key,username v
 
 $users_cart="create table users_cart(id int auto_increment not null primary key,use_id int not null,p_id int not null,qty int not null);";
 
-$wishlist="create table wishlist(id int auto_increment not null primary key,user_id int not null,product_id i@nt not null,added_on datetime not null);";
+$wishlist="create table wishlist(id int auto_increment not null primary key,user_id int not null,product_id int not null,added_on datetime not null);";
 
 $returns="create table returns(id int auto_increment not null primary key,od_id int not null,problems varchar(255) not null);";
 
